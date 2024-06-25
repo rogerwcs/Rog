@@ -12,6 +12,7 @@ bsolver1=function(N,lambda,b0=1,bN=1)
   cc=solve(A)%*%c(b0,bN)
   b=cc[1]*sol1+cc[2]*sol2
   return(b[2:N])
+  %teste
 }
 
 #This calculates moments up to order two of \tau(1)
